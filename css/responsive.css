@@ -1,0 +1,73 @@
+/*Se activa cuando la pantalla disminuye de tamaño*/
+
+@media screen and (max-width: 900px){
+
+
+
+	.contenido{
+		width: 100%;
+	}
+
+	h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.enlaces{
+		width: 100%;
+	}
+
+	header ul {
+		text-align: center;
+		padding-right: 10%;
+	}
+
+	/*DIV Imagen central*/
+	#imagencentral {
+		width: 100%;
+		background: #82c3a6; /*Color de Fondo de la imagen central*/
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+
+	/*Tamaño de la imagen principal*/
+	div #imagencentral img{
+		width: 80%;
+		height: 150px;
+	}
+
+	/*Tamaño de los DIVs de las imagenes*/
+	#imagensecundaria{
+		width: 100%;
+		background:#d5c75f;  /*Color de Fondo de la imagen secundaria*/
+		padding-top: 2%;
+		padding-bottom: 2%;
+		display: block;
+	}
+
+	#imagensecundaria > div{
+		width: 100%;
+		text-align: center;
+	}
+	/**/
+
+	/*Tamaño de la imagen secundaria*/
+	div #imagensecundaria img{
+		width: 80%;
+		height: 150px;
+		
+	}
+
+	.footer footer {
+		display: inline-block;
+	} 	
+
+	.footer{ /*Color y bordes del footer*/
+		background: #C6d5c5;	
+		/*Borde redondeado inferior izq y der*/
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+}
+

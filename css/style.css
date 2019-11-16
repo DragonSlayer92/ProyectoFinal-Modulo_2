@@ -1,0 +1,156 @@
+body{ /*tipografía Dancing Script*/
+	font-family: Dancing Script;
+	background:  #02010a; /*color de fondo negro*/
+}
+
+/*Animacion*/
+@-webkit-keyframes slide{
+  0%{
+    margin-top: 150%;
+  }60%{
+    margin-top: -5%;
+  }100%{
+    margin-top: 0%;
+  }
+}
+
+/*Sombra para las imagenes*/
+.sombra {
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+/************
+//-----------------------------
+// Header
+//-----------------------------
+************/
+
+/*Tamaño del area de trabajo*/
+.contenido {
+	width: 900px;
+	margin: 0 auto;
+   -webkit-animation: slide 1s forwards;
+}
+
+header{ /*Cabecera*/
+	background-color: #5b7989; /*Color de Fondo*/
+    /*Borde redondeado superior izq y der*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+	color: white; /*color blanco del titulo*/
+	padding-left: 2%;
+	width: 48%;
+	float: left;
+	text-shadow: 2px 2px #02010a; /*sombra del titulo*/
+}
+
+/*Enlaces*/
+.enlaces {
+	width: 48%;
+	display: inline-block;	
+	padding-right: 2%;
+}
+
+header ul {
+	list-style-type: none;
+	text-align: right;
+	font-size: 1.3em;
+}
+header ul li {
+	display: inline; /*despliega en lista los enlaces*/
+	padding: 2%;
+}
+header ul li a {
+	color: #ffffff;
+}
+
+/*Quitar subrayado del enlace actual*/
+.actual a{
+	text-decoration: none;
+}
+
+/************
+//-----------------------------
+// Body
+//-----------------------------
+************/
+
+/*Imagen central*/
+#imagencentral {
+	background: #82c3a6; /*Color de Fondo de la imagen central*/
+	padding-top: 2%;
+	padding-bottom: 2%;
+	}
+
+div #imagencentral img{
+	display:block;
+	margin:auto;
+	width:90%;
+	height:350px;
+	}
+
+/*Imagen secundaria*/
+#imagensecundaria{
+	background:#d5c75f;  /*Color de Fondo de la imagen secundaria*/
+	padding-top: 2%;
+	padding-bottom: 2%;
+	display: flex;
+}
+
+/*Tamaño de los DIVs de las imagenes*/
+#imagensecundaria > div{
+	width: 50%;
+	height: 50%;
+	text-align: center;
+}
+
+/*Tamaño de las imagenes secundarias*/
+div #imagensecundaria img{
+	width:90%;
+	height:250px;
+	}
+
+
+.paisajes:hover{
+	transition-duration: 0.5s;
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+	transform: rotate(10deg);
+	}
+
+.retratos:hover{
+	transition-duration: 0.5s;
+	-ms-transform: translate(20px, -5px); /* IE 9 */
+	-webkit-transform: translate(20px, -5px); /* Chrome, Safari, Opera */
+	transform: translate(20px, -5px);
+}
+
+/************
+//-----------------------------
+// Footer
+//-----------------------------
+************/
+
+
+.footer footer {
+	display: flex;
+}  
+
+.footer{ /*Color y bordes del footer*/
+	background: #C6d5c5;	
+	/*Borde redondeado inferior izq y der*/
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.footer img{
+		width: 20px;
+		height: 20px;
+}
+
+.footer ul{
+	list-style-type: none;
+}
